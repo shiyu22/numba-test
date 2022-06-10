@@ -4,7 +4,7 @@ from towhee import register, ops
 from numba import njit
 
 
-# @register(name='inner_distance')
+@register(name='inner_distance')
 # @njit()
 def inner_distance(query, data):
     dists = []
